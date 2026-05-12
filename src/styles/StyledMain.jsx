@@ -77,7 +77,7 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   width: 320px;
-  height: 535px;
+  height: 550px;
   border-radius: 15px;
   border: 1px solid var(--x, #f1b865);
   margin-top: 14px;
@@ -115,7 +115,6 @@ export const From = styled.div`
   line-height: normal;
   letter-spacing: -0.24px;
   margin-top: 30px;
-  margin-bottom: 25px;
 `;
 
 export const Lion = styled.div`
