@@ -2,18 +2,18 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Pretendard Variable';
-    src: url('/fonts/pretendard/PretendardVariable.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('./woff2/PretendardVariable.woff2') format('woff2-variations');
+}
 
   @font-face {
     font-family: 'DNFBitBitv2';
-    src: url('/fonts/DNFBitBitv2/DNFBitBitv2.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+   font-style:normal;
+   font-weight:400;
+   src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
     font-display: block;
   }
 
