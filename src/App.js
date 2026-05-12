@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
+import React from "react";
+import GlobalStyle from "./pages/GlobalStyles";
+import Main from "./pages/Main";
+import DWU from "./pages/DWU";
+import KMU from "./pages/KMU";
+import data from "./data.json";
 
 function App() {
+  const [dataList, setDataList] = useState([]);
+
+  useEffect(() => {
+    setDataList(data);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <GlobalStyle />
+      <Routes>
+        <Route path="/" element={<Main dataList={dataList} />} />
+        <Route path="/dwu/:Id" element={<DWU dataList={dataList} />} />
+        <Route path="/kmu/:Id" element={<KMU dataList={dataList} />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
