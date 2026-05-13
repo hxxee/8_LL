@@ -52,9 +52,9 @@ export const Logo = styled.div`
 `;
 
 export const Name = styled.div`
-  margin-top: 8px;
+  margin-top: 4px;
   font-family: Pretendard;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -73,9 +73,9 @@ export const Name = styled.div`
 `;
 
 export const Team = styled.div`
-  margin-top: 8px;
+  margin-top: 10px;
   font-family: Pretendard;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 800;
   line-height: 25px;
