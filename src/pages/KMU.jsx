@@ -48,23 +48,6 @@ const KMU = ({ dataList }) => {
         <K.Topic>
           <K.Title style={{ marginTop: "18px" }}>주제</K.Title>
           <K.Text2 style={{ marginTop: "19px" }}>
-            <ul>
-              <li>
-                대학 생활 문제 해결 서비스
-                <br />
-                (공강 · 시험 · 팀플 · 식사 등)
-              </li>
-
-              <li>학습과 성장에 도움을 주는 서비스</li>
-
-              <li>1인 가구를 위한 서비스</li>
-
-              <li>
-                요즘 대두되는 사회 문제 해결 서비스
-                <br />
-                (숏폼 중독, AI 활용 능력 격차, 월세 상승 등)
-              </li>
-            </ul>
           </K.Text2>
         </K.Topic>
       </K.Background>
